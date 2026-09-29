@@ -1713,11 +1713,6 @@ a { text-decoration: none; color: inherit; }
 
       <!-- Right: Social Links (matches reference clone) -->
       <div class="hero-socials">
-        <a class="hero-social-link" href="#" target="_blank">
-          <span class="icon"><i class="fas fa-fire"></i></span>
-          <span class="label">Join the Movement</span>
-          <span class="arrow">→</span>
-        </a>
         <a class="hero-social-link" href="https://www.tiktok.com/@fromhellatohyphy" target="_blank">
           <span class="icon"><i class="fab fa-tiktok"></i></span>
           <span class="label">Follow on TikTok</span>
@@ -1726,16 +1721,6 @@ a { text-decoration: none; color: inherit; }
         <a class="hero-social-link" href="https://www.instagram.com/fromhellatohyphy" target="_blank">
           <span class="icon"><i class="fab fa-instagram"></i></span>
           <span class="label">Follow on Instagram</span>
-          <span class="arrow">→</span>
-        </a>
-        <a class="hero-social-link" href="#" target="_blank">
-          <span class="icon"><i class="fab fa-youtube"></i></span>
-          <span class="label">Subscribe on YouTube</span>
-          <span class="arrow">→</span>
-        </a>
-        <a class="hero-social-link" href="#" target="_blank">
-          <span class="icon"><i class="fab fa-x-twitter"></i></span>
-          <span class="label">Follow on X</span>
           <span class="arrow">→</span>
         </a>
         <a class="hero-social-link" href="https://www.facebook.com/fromhellatohyphy" target="_blank">
@@ -1838,7 +1823,7 @@ a { text-decoration: none; color: inherit; }
       <h2>Want a Free Preview?</h2>
       <p>Enter your email and we'll send you a sample of the dictionary — straight to your inbox.</p>
       <form class="email-form" onsubmit="handleEmail(event)">
-        <input type="email" placeholder="Enter your email" required>
+        <input type="email" name="email" placeholder="Enter your email" required>
         <button type="submit">Send It</button>
       </form>
       <p class="email-privacy">No spam. Unsubscribe anytime. We respect your privacy.</p>
@@ -1927,8 +1912,6 @@ a { text-decoration: none; color: inherit; }
         <div class="author-socials">
           <a href="https://www.instagram.com/fromhellatohyphy" target="_blank"><i class="fab fa-instagram"></i></a>
           <a href="https://www.tiktok.com/@fromhellatohyphy" target="_blank"><i class="fab fa-tiktok"></i></a>
-          <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
-          <a href="#" target="_blank"><i class="fab fa-x-twitter"></i></a>
         </div>
       </div>
       <div class="about-text">
@@ -1966,25 +1949,25 @@ a { text-decoration: none; color: inherit; }
           <i class="fas fa-camera"></i>
           <h3>Approved Photos</h3>
           <p>High-resolution author and book photos for press use.</p>
-          <a href="#">Download →</a>
+          <a href="mailto:thefirstclassmediagroup@gmail.com?subject=Approved%20Photos%20request%20(From%20Hella%20to%20Hyphy)">Request by email →</a>
         </div>
         <div class="press-card">
           <i class="fas fa-file-alt"></i>
           <h3>Sell Sheet</h3>
           <p>One-page summary with book details and ordering info.</p>
-          <a href="#">Download →</a>
+          <a href="mailto:thefirstclassmediagroup@gmail.com?subject=Sell%20Sheet%20request%20(From%20Hella%20to%20Hyphy)">Request by email →</a>
         </div>
         <div class="press-card">
           <i class="fas fa-newspaper"></i>
           <h3>Media Kit</h3>
           <p>Full media kit with bio, talking points, and brand assets.</p>
-          <a href="#">Download →</a>
+          <a href="mailto:thefirstclassmediagroup@gmail.com?subject=Media%20Kit%20request%20(From%20Hella%20to%20Hyphy)">Request by email →</a>
         </div>
         <div class="press-card">
           <i class="fas fa-microphone"></i>
           <h3>Speaker Sheet</h3>
           <p>Speaking topics, past engagements, and booking details.</p>
-          <a href="#">Download →</a>
+          <a href="mailto:thefirstclassmediagroup@gmail.com?subject=Speaker%20Sheet%20request%20(From%20Hella%20to%20Hyphy)">Request by email →</a>
         </div>
       </div>
     </div>
@@ -2007,10 +1990,10 @@ a { text-decoration: none; color: inherit; }
         <p>Whether it's a cultural workshop, podcast appearance, panel discussion, or keynote — bring the story of Bay Area language to your audience.</p>
         <form class="contact-form" onsubmit="handleSubmit(event)">
           <div class="form-row">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
           </div>
-          <select required>
+          <select name="interest" required>
             <option value="" disabled selected>I'm interested in...</option>
             <option>Event Speaking</option>
             <option>Guest Podcast</option>
@@ -2021,7 +2004,7 @@ a { text-decoration: none; color: inherit; }
             <option>Bulk Book Orders</option>
             <option>Other</option>
           </select>
-          <textarea placeholder="Tell me about your event or project..." rows="5"></textarea>
+          <textarea name="message" placeholder="Tell me about your event or project..." rows="5"></textarea>
           <button type="submit">Send Message</button>
         </form>
       </div>
@@ -2086,8 +2069,6 @@ a { text-decoration: none; color: inherit; }
       <div class="footer-connect-icons">
         <a href="https://www.tiktok.com/@fromhellatohyphy" target="_blank" class="fc-tiktok"><i class="fab fa-tiktok"></i></a>
         <a href="https://www.instagram.com/fromhellatohyphy" target="_blank" class="fc-instagram"><i class="fab fa-instagram"></i></a>
-        <a href="#" target="_blank" class="fc-youtube"><i class="fab fa-youtube"></i></a>
-        <a href="#" target="_blank" class="fc-x"><i class="fab fa-x-twitter"></i></a>
         <a href="https://www.facebook.com/fromhellatohyphy" target="_blank" class="fc-facebook"><i class="fab fa-facebook-f"></i></a>
       </div>
     </div>
@@ -2121,16 +2102,49 @@ function closeMenu() {
   document.getElementById('navCta').classList.remove('open');
 }
 
+// Form submissions. Set FORMSPREE_ENDPOINT (https://formspree.io/f/<id>) to deliver
+// by email; until then, submissions open a pre-filled email so nothing is lost.
+const FORMSPREE_ENDPOINT = '';
+const CONTACT_EMAIL = 'thefirstclassmediagroup@gmail.com';
+
+function openMailDraft(subject, fields) {
+  const body = Object.entries(fields).map(([k, v]) => `${k}: ${v}`).join('\n');
+  window.location.href = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+}
+
+async function sendForm(form, subject, successMessage) {
+  const fields = Object.fromEntries(new FormData(form));
+  if (!FORMSPREE_ENDPOINT) {
+    openMailDraft(subject, fields);
+    return;
+  }
+  const button = form.querySelector('button[type="submit"]');
+  button.disabled = true;
+  try {
+    const res = await fetch(FORMSPREE_ENDPOINT, {
+      method: 'POST',
+      headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
+      body: JSON.stringify({ ...fields, _subject: subject }),
+    });
+    if (!res.ok) throw new Error(`Formspree responded ${res.status}`);
+    alert(successMessage);
+    form.reset();
+  } catch (err) {
+    console.error('Form submission failed:', err);
+    alert(`Sorry, that didn't go through. Please email ${CONTACT_EMAIL} directly.`);
+  } finally {
+    button.disabled = false;
+  }
+}
+
 function handleSubmit(e) {
   e.preventDefault();
-  alert('Thank you for your interest! We\'ll be in touch soon.');
-  e.target.reset();
+  sendForm(e.target, 'From Hella to Hyphy: speaking / contact request', "Thank you! We'll be in touch soon.");
 }
 
 function handleEmail(e) {
   e.preventDefault();
-  alert('Thank you! Check your inbox for a free preview.');
-  e.target.reset();
+  sendForm(e.target, "From Hella to Hyphy: email list signup", "Thanks! You're on the list.");
 }
 </script>
 
